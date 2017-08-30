@@ -1,0 +1,11 @@
+.main_content {
+	display: table; 
+	margin: auto; 
+	padding: 10%; 
+}
+
+.search {
+	display: table-cell;
+	vertical-align: middle;
+	
+}
