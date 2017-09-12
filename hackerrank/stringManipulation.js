@@ -390,16 +390,23 @@ console.log(maxLength(10, 'beabeefeab'));
 
 
 function maxLength(n, s){
-  let store = {}; 
+  let pair = [[],[]]; 
+  let count = [[], []]; 
 
-  for(let i = 0; i < s.length; i++){
-    if(!store[s[i]]){
-      store[s[i]] = 1; 
+  for(let i = 0; i < n; i++){
+    let letter = s.charAt(i); 
+    let letterNumber = String.charCodeAt(letter) - 97; 
+
+    for(let col = 0; col < 26; col++){
+      if(pair[letterNumber][col] == letter){
+        count[letterNumber][col] = -1; 
+      }
+
+      if(pair[letterNumber][col] !== -1){
+        pair[letterNumber][col] = letter; 
+        count[letterNumber][col]++; 
+      }
     }
-  }
-
-  for(let i in store){
-    console.log(i); 
   }
 
 }

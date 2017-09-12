@@ -1,0 +1,683 @@
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+header div .row{
+display: none; 
+}
+.row{
+margin-left: 0!important; 
+margin-right: 0!important; 
+
+}
+.col-sm-12{
+border-left: none!important; 
+border-right: none!important; 
+}
+#main {
+width: 90%; 
+}
+body{
+background-color: #303; 
+}
+p {
+color: white; 
+
+}
+
+.container {
+width: 100%; 
+}
+.herobutton{
+position: absolute; 
+margin: auto; 
+cursor: pointer; 
+border: none; 
+top: 6%; 
+outline: 0; 
+width: 166px; 
+padding: 10px 25px; 
+color: black; 
+background-color: aliceblue; 
+text-align: center; 
+left: 45%;
+display: none; 
+}
+.mySlides {
+height: 450px; 
+
+}
+.w3-content w3-section{
+width: 100%; 
+height: 500px; 
+}
+
+.w3-container{ 
+margin: auto; 
+}
+
+.w3-content {
+margin: auto;
+}
+
+.w3-center {
+color: #ffffff;
+text-align: center!important;
+font-size: 125%; 
+}
+
+.w3-wide{
+font-size: 2.5em;
+}
+  
+.w3-margin-top{
+margin-top: 16px!important;
+}
+
+.w3-row-padding{
+padding: 0 8px; 
+color: #ffffff;
+overflow: hidden; 
+width: 100%;
+}
+
+.w3-row-padding > .w3-third{
+padding: 0 8px; 
+}
+
+.w3-third{
+padding: 0 8px;
+width: 33%;
+float: left; 
+}
+.vpresident{
+width: 350px;
+padding: 3%; 
+padding-top: 5%; 
+margin-left: 10%; 
+float: left; 
+}
+.vpmessage{
+text-align: center; 
+padding: 3%; 
+display: grid; 
+padding-top: 4%;  
+}
+.vpheader{
+color: white; 
+font-size: xx-large; 
+}
+
+/********************MOBILE VIEW***************************************************/
+@media only screen and (max-width: 767px)
+{
+  .herobutton{
+    top: 5%; 
+    left: 40%; 
+  }
+  .fbfeed{
+   margin-top: 20px!important; 
+  }
+  .vpresident{
+   width: 314px; 
+   padding: 3%; 
+  }
+      .w3-third
+      {
+          display: block; 
+          float: none; 
+          width: 100%;
+          padding: 20px 0;
+      }
+}
+
+.w3-light-grey{
+width: inherit; 
+}
+
+.w3-padding-48 {
+padding-top: 50px!important;
+padding-bottom: 48px!important;
+}
+
+.w3-padding{
+padding: 8px 15px!important;
+}
+
+.w3-card, .w3-card-2{
+box-shadow: inset 0 2px 0px 0px rgb(255, 201, 201), inset 0 2px 0px 0px rgba(212, 171, 171, 0.46)
+}
+
+.w3-text-grey {
+color: white; 
+
+}
+
+/***********************MOBILE VIEW***************************************************/
+@media screen and (max-width: 600px) {
+    .herobutton{
+    top: 143px;  
+    left: 33%; 
+    }
+    .fbfeed{
+    margin-top: 20px!important; 
+    }
+    #parallaxMessage{
+    height: 450px; 
+    }
+    .vpresident{
+    vertical-align: middle; 
+    }
+    .vpmessage{
+    display: block; 
+    width: 336.29; 
+    text-align: center; 
+    }
+    div.module.content{
+    text-align: center; 
+    height: 690px;
+    }
+    iframe{
+    width: 100%; 
+    height: 400px; 
+    }
+    .footersection{
+    height: 945px!important; 
+    }
+    #handshakelogo {
+    display: inline; 
+    width: 174px;
+    margin-left: 24%;
+    }
+
+    #handshaketitle{
+    margin-bottom: 10px;
+       
+        font-size: -webkit-xxx-large;
+    }
+    .mySlides{
+
+    height: inherit; 
+    }
+
+      .parallax{
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+      }
+    .separallax1{
+    height: 36vh; 
+    background: none; 
+    background-attachment: inherit; 
+    }
+    #image1sep{
+    margin-top: 25%; 
+    }
+}
+/***********************END OF MOBILE VIEW***************************************************/
+
+/***************************end of parallax section of website **********************************************/
+.aboutTitle{
+color: #886600; 
+font-size: 2.5em; 
+padding: 2%; 
+}
+  
+/***************************************Top Navigation style**************************************************/
+#navheader{position:relative;width:100%;background:#333;z-index: 1; }
+.Headerlogo{position:relative;z-index:123;font:18px verdana;color:#6DDB07;float:left;width:17%; margin-top:5px;}
+.Headerlogo a{color:#6DDB07;}
+#cssmenu{position:relative;margin:-9px auto;}
+#cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{border:0;list-style:none;line-height:1;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+#cssmenu #head-mobile{display:none}
+#cssmenu{font-family:sans-serif;background:#230523}
+#cssmenu > ul > li{float:left}
+#cssmenu > ul > li > a{padding:17px;font-size:12px;letter-spacing:1px;text-decoration:none;color:#ddd;font-weight:700;}
+#cssmenu > ul > li:hover > a,#cssmenu ul li.active a{color:#fff}
+#cssmenu > ul > li:hover,#cssmenu ul li.active:hover,#cssmenu ul li.active,#cssmenu ul li.has-sub.active:hover{background:#ffcc33!important;-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;}
+#cssmenu > ul > li.has-sub > a{padding-right:30px}
+#cssmenu > ul > li.has-sub > a:after{position:absolute;top:22px;right:11px;width:8px;height:2px;display:block;background:#ddd;content:''}
+#cssmenu > ul > li.has-sub > a:before{position:absolute;top:19px;right:14px;display:block;width:2px;height:8px;background:#ddd;content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
+#cssmenu > ul > li.has-sub:hover > a:before{top:23px;height:0}
+#cssmenu ul ul{position:absolute;left:-9999px}
+#cssmenu ul ul li{height:0;-webkit-transition:all .25s ease;-ms-transition:all .25s ease;background:#333;transition:all .25s ease}
+#cssmenu ul ul li:hover{}
+#cssmenu li:hover > ul{left:auto}
+#cssmenu li:hover > ul > li{height:35px}
+#cssmenu ul ul ul{margin-left:85%;top:0}
+#cssmenu ul ul li a{border-bottom:1px solid rgba(150,150,150,0.15);padding:11px 15px;width:170px;font-size:12px;text-decoration:none;color:#ddd;font-weight:400;}
+#cssmenu ul ul li:last-child > a,#cssmenu ul ul li.last-item > a{border-bottom:0}
+#cssmenu ul ul li:hover > a,#cssmenu ul ul li a:hover{color:#fff}
+#cssmenu ul ul li.has-sub > a:after{position:absolute;top:16px;right:11px;width:8px;height:2px;display:block;background:#ddd;content:''}
+#cssmenu ul ul li.has-sub > a:before{position:absolute;top:13px;right:14px;display:block;width:2px;height:8px;background:#ddd;content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
+#cssmenu ul ul > li.has-sub:hover > a:before{top:17px;height:0}
+#cssmenu ul ul li.has-sub:hover,#cssmenu ul li.has-sub ul li.has-sub ul li:hover{background:#363636;}
+#cssmenu ul ul ul li.active a{border-left:1px solid #333}
+#cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active> a{border-top:1px solid #333}
+
+@media screen and (max-width:1160px){
+  .fbfeed{
+  margin-top: 20px!important; 
+  }
+  .footersection{
+  height: 400px; 
+  }
+  .mainlogo{float: left; }
+  .Headerlogo{top:0;left: 0;width:100%;height:46px;text-align:center;padding:10px 0 0 0 ;}
+  .logo2{display:none}
+  nav{width:100%;}
+  #cssmenu{width:100%}
+  #cssmenu ul{width:100%;display:none; top: 5px; }
+  #cssmenu ul li{width:100%;border-top:1px solid #444}
+  #cssmenu ul li:hover{background:#363636;}
+  #cssmenu ul ul li,#cssmenu li:hover > ul > li{height:auto}
+  #cssmenu ul li a,#cssmenu ul ul li a{width:100%;border-bottom:0}
+  #cssmenu > ul > li{float:none}
+  #cssmenu ul ul li a{padding-left:25px}
+  #cssmenu ul ul li{background:#333!important;}
+  #cssmenu ul ul li:hover{background:#363636!important}
+  #cssmenu ul ul ul li a{padding-left:35px}
+  #cssmenu ul ul li a{color:#ddd;background:none}
+  #cssmenu ul ul li:hover > a,#cssmenu ul ul li.active > a{color:#fff}
+  #cssmenu ul ul,#cssmenu ul ul ul{position:relative;left:0;width:100%;margin:0;text-align:left}
+  #cssmenu > ul > li.has-sub > a:after,#cssmenu > ul > li.has-sub > a:before,#cssmenu ul ul > li.has-sub > a:after,#cssmenu ul ul > li.has-sub > a:before{display:none}
+  #cssmenu #head-mobile{display:block;padding:23px;color:#ddd;font-size:12px;font-weight:700}
+  .menubutton{width:55px;height:46px;position:absolute;right:0;top:30px;cursor:pointer;z-index: 12399994;}
+  .menubutton:after{position:absolute;top:22px;right:20px;display:block;height:4px;width:20px;border-top:2px solid #dddddd;border-bottom:2px solid #dddddd;content:''}
+  .menubutton:before{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;position:absolute;top:16px;right:20px;display:block;height:2px;width:20px;background:#ddd;content:''}
+  .menubutton.menu-opened:after{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;top:23px;border:0;height:2px;width:19px;background:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+  .menubutton.menu-opened:before{top:23px;background:#fff;width:19px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
+  #cssmenu .submenu-button{position:absolute;z-index:99;right:0;top:0;display:block;border-left:1px solid #444;height:46px;width:46px;cursor:pointer}
+  #cssmenu .submenu-button.submenu-opened{background:#262626}
+  #cssmenu ul ul .submenu-button{height:34px;width:34px}
+  #cssmenu .submenu-button:after{position:absolute;top:22px;right:19px;width:8px;height:2px;display:block;background:#ddd;content:''}
+  #cssmenu ul ul .submenu-button:after{top:15px;right:13px}
+  #cssmenu .submenu-button.submenu-opened:after{background:#fff}
+  #cssmenu .submenu-button:before{position:absolute;top:19px;right:22px;display:block;width:2px;height:8px;background:#ddd;content:''}
+  #cssmenu ul ul .submenu-button:before{top:12px;right:16px}
+  #cssmenu .submenu-button.submenu-opened:before{display:none}
+  #cssmenu ul ul ul li.active a{border-left:none}
+  #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}
+}
+/***************************************Top Navigation style end**************************************************/
+
+
+  .footersection{
+margin-left: 1%; 
+    height: 400px;
+z-index: -1;  
+  }
+
+
+@media only screen and (max-width: 580px) {
+div.module.content{
+height: 100%!important;
+}
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+.mainlogo{
+width: 190px;
+height: 60px; 
+}
+iframe{
+width: 90%; 
+padding: 2%; 
+}
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; display: table; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+.loginbutton{
+    width: 90%;
+    display: block;
+    user-select: none;
+    margin: auto; 
+    background-color: #330033;
+color: white; 
+padding: 10px; 
+}
+.loginbutton:hover{
+background-color: #3e8e41;
+}
+.fbfeed{
+float: left; 
+margin-top: 90px; 
+}
+.learnmorebutton{
+    background-color: #ffcc33;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.learnmorebutton:hover{
+background-color: #3e8e41;
+}
+.w3-justify{
+font-size: initial; 
+}</style>
+<div id="fb-root">
+	&nbsp;</div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+  
+</script>
+<div id="navheader">
+	<div id="cssmenu">
+		<div class="Headerlogo">
+			<a href="/"><img class="mainlogo" name="mainlogo" src="/sites/default/files/image/logoo.svg" /></a></div>
+		<div id="head-mobile">
+			&nbsp;</div>
+		<div class="menubutton">
+			&nbsp;</div>
+		<ul>
+			<li class="active">
+				<a href="/">HOME</a></li>
+			<li>
+				<a href="/aboutus">ABOUT US</a>
+				<ul>
+					<li>
+						<a href="../#theteamwrapper">Staff</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/students">STUDENTS</a>
+				<ul>
+					<li>
+						<a href="/majorsandcareers">Majors &amp; Careers</a></li>
+					<li>
+						<a href="/careerdevelopment">Career Development</a>
+						<ul>
+							<li>
+								<a href="/networkingandinformationalinterviewing">Networking &amp; Informational Interviewing</a></li>
+							<li>
+								<a href="/careerdevelopment/interviewpreparation">Interview Preparation</a></li>
+							<li>
+								<a href="/careerdevelopment/salaryiformation">Salary Information</a></li>
+							<li>
+								<a href="/careerdevelopment/thejoboffer">The Job Offer</a></li>
+							<li>
+								<a href="/careerdevelopment/helpfulhandouts">Helpful Handouts</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/exploringgraduateschool">Exploring Graduate School</a></li>
+					<li>
+						<a href="/findajoboncampus">Find a Job on Campus</a></li>
+					<li>
+						<a href="/findaninternship">Find an Internship</a></li>
+					<li>
+						<a href="/forstudents/onlineresources">Online Resources</a>
+						<ul>
+							<li>
+								<a href="/onlineresources/forveterans ">For Veterans</a></li>
+							<li>
+								<a href="/onlineresources/internationalstudents">For International Students</a></li>
+							<li>
+								<a href="/onlineresources/byindustryarea">By Industry Area</a></li>
+							<li>
+								<a href="/onlineresources/bycollegemajor">By College Major</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/forstuentsd/disclaimerforstudents">Disclaimer for Students</a></li>
+					<li>
+						<a href="/forstudents/alumni">Alumni</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/employers">EMPLOYERS</a>
+				<ul>
+					<li>
+						<a href="/employers/postingjobsandinternships">Posting Jobs and Internships</a></li>
+					<li>
+						<a href="/employers/careerevents">Career Events</a></li>
+					<li>
+						<a href="/employers/oncampusinterviewing">On-Campus Interviewing</a></li>
+					<li>
+						<a href="/employers/employerspoliciesandguidelines">Policies and Guidelines</a></li>
+					<li>
+						<a href="/employers/helpwithhandshakeforemployers">Help with Handshake</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/events">EVENTS</a></li>
+			<li>
+				<a href="/programs">PROGRAM</a></li>
+			<li>
+				<a href="/contact">CONTACT</a></li>
+		</ul>
+	</div>
+</div>
+<div class="w3-content w3-section">
+	<div class="slides">
+		<a href="/sites/default/files/image/plfpPDF.pdf" target="_blank"> 
+    <img class="mySlides" src="/sites/default/files/image/fellowsprogramwebbanner.png" style="width:100%" /> </a></div>
+	<div class="slides">
+		<a href="https://sfsu.co1.qualtrics.com/jfe/form/SV_etXpE1q47X1Ww61" target="_blank"> 
+    <img class="mySlides" src="/sites/default/files/image/banner2.png" style="width:100%" /> </a>
+    </div>
+</div>
+<!-- Band Description -->
+<p>&nbsp;</p>
+<div class="w3-container w3-center w3-content" style="max-width:600px; padding-bottom: 5%;">
+	<h2 class="w3-wide">
+		Workshops for Career Development</h2>
+	<p class="w3-justify">The Office of Career Services &amp; Leadership Development (CSLD) offers a wide variety of workshops available to all current SF State students and alumni. To register for a workshop, please check out our workshop calendar and register for the event you wish to attend by following the link and logging on to your Orgsync account. Please click on &quot;workshops&quot; bar on the left to view the types of professional development workshops CSLD has to offer.</p>
+	<h2 class="w3-wide">
+		Fall 2017 EVENTS &amp; WORKSHOPS</h2>
+	<a href="https://sfsu.co1.qualtrics.com/SE/?SID=SV_3y0sNHAnOuQewct&amp;Q_JFE=0" target="_blank"><img alt="fellowsprogram" src="/sites/default/files/image/plfp" style="width: 100%; height: 100%; " /></a></div>
+<br />
+<div class="footersection">
+	<div class="col-md-4 col-sm-6 footerleft ">
+		<div class="logofooter">
+			<a href="/"> <img class="mainlogo" id="mainlogo" name="mainlogo" src="/sites/default/files/image/logoo.svg" /></a></div>
+		<p>The Career Center helps students and alumni in developing, evaluating, and/or implementing self-directed career, education, and employment decisions and plans.</p>
+		<p>Address: 1600 Holloway Avenue San Francisco, CA 94132</p>
+		<p>Phone: (415) 338-1761</p>
+		<p>E-mail : jobdev@sfsu.edu</p>
+		<p>Hours: Monday through Friday, 8 a.m. - 5 p.m.</p>
+	</div>
+	<div class="col-md-2 col-sm-6 paddingtop-bottom">
+		<h6 class="heading7">
+			GENERAL LINKS</h6>
+		<ul class="footer-ul">
+			<li>
+				<a href="/">HOME</a></li>
+			<li>
+				<a href="/aboutus">ABOUT</a></li>
+			<li>
+				<a href="/content/fellows">PROGRAMS</a></li>
+			<li>
+				<a href="/workshops">EVENTS</a></li>
+			<li>
+				<a href="/students">STUDENTS</a></li>
+			<li>
+				<a href="/employers">EMPLOYERS</a></li>
+			<li>
+				<a href="/../#contactheader">CONTANCT</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3 col-sm-6 paddingtop-bottom">
+		<h6 class="heading7">
+			LATEST POST</h6>
+		<a class="twitter-timeline" data-widget-id="679064305732571136" href="https://twitter.com/SFSU_CSLD">Tweets by @SFSU_CSLD</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+	<div class="fbfeed">
+		<div class="fb-page" data-adapt-container-width="true" data-height="410" data-hide-cover="false" data-href="https://www.facebook.com/sfstatecareerservices/" data-show-facepile="true" data-small-header="true" data-tabs="timeline" data-width="275">
+			<blockquote cite="https://www.facebook.com/sfstatecareerservices/" class="fb-xfbml-parse-ignore">
+				<a href="https://www.facebook.com/sfstatecareerservices/">San Francisco State Office of Career Services</a></blockquote>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>
+
+var url = 'https://app.joinhandshake.com/external_feeds/1301/public.rss?token=8xz_Rw4Rbxyl-9UeN-huS-kWJ30urXv14iUIGEDmkivDTB0hjf4emg&callback=?'; 
+
+
+$.getJSON("https://app.joinhandshake.com/external_feeds/1301/public.rss?token=8xz_Rw4Rbxyl-9UeN-huS-kWJ30urXv14iUIGEDmkivDTB0hjf4emg&callback=?", {
+    num: 10,
+    q: url
+}).done(function (data) {
+    console.log(data);
+});
+
+
+//navigation start script//////////////////////////////////////////
+(function($) {
+$.fn.menumaker = function(options) {  
+ var cssmenu = $(this), settings = $.extend({
+   format: "dropdown",
+   sticky: false
+ }, options);
+ return this.each(function() {
+   $(this).find(".menubutton").on('click', function(){
+     $(this).toggleClass('menu-opened');
+     var mainmenu = $(this).next('ul');
+     if (mainmenu.hasClass('open')) { 
+       mainmenu.slideToggle().removeClass('open');
+     }
+     else {
+       mainmenu.slideToggle().addClass('open');
+       if (settings.format === "dropdown") {
+         mainmenu.find('ul').show();
+       }
+     }
+   });
+   cssmenu.find('li ul').parent().addClass('has-sub');
+multiTg = function() {
+     cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+     cssmenu.find('.submenu-button').on('click', function() {
+       $(this).toggleClass('submenu-opened');
+       if ($(this).siblings('ul').hasClass('open')) {
+         $(this).siblings('ul').removeClass('open').slideToggle();
+       }
+       else {
+         $(this).siblings('ul').addClass('open').slideToggle();
+       }
+     });
+   };
+   if (settings.format === 'multitoggle') multiTg();
+   else cssmenu.addClass('dropdown');
+   if (settings.sticky === true) cssmenu.css('position', 'fixed');
+resizeFix = function() {
+  var mediasize = 1000;
+     if ($( window ).width() > mediasize) {
+       cssmenu.find('ul').show();
+     }
+     if ($(window).width() <= mediasize) {
+       cssmenu.find('ul').hide().removeClass('open');
+     }
+   };
+   resizeFix();
+   return $(window).on('resize', resizeFix);
+ });
+  };
+})(jQuery);
+
+(function($){
+$(document).ready(function(){
+$("#cssmenu").menumaker({
+   format: "multitoggle"
+});
+});
+})(jQuery);
+
+window.onscroll = changePos;
+
+function changePos() {
+    var header = document.getElementById("navheader");
+
+var menuicon = document.getElementsByClassName('menubutton'); 
+
+    if (window.pageYOffset > 70 && screen.width >= 1000) {  //desktop
+        header.style.position = "fixed"; 
+        header.style.width = '88%';
+        header.style.top = "2px";
+    } else if(window.pageYOffset > 70 && screen.width <= 1000){ //mobile
+       header.style.position = 'fixed'; 
+       header.style.width = '88%'; 
+       header.style.top = '1%'; 
+    } else {
+      header.style.position = "relative";
+        header.style.width = '100%'; 
+        header.style.top = "50";
+    }
+}
+//navigation end script//////////////////////////////////////////
+//social media section/////
+ <!-- Twitter JS -->
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+var b = document.getElementsByClassName('herobutton'); 
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+b[i].style.display = 'none';  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";
+b[myIndex-1].style.display = 'none';   
+    setTimeout(carousel, 9000); // Change image every 2 seconds
+}</script></div>
+<p>&nbsp;</p>
