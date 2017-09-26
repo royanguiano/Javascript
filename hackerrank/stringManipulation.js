@@ -283,45 +283,88 @@ function funnyStringMatch(n, B){
  return (size === null ? 0 : size.length); 
 }
 
-console.log(loveLetterProblem('abc'))
+
+
+
+
+
+console.log('love letter palidrone ', loveLetterProblem('abcba'))
 
 function loveLetterProblem(s){
+  let chars = s.split(''), counter = 0; 
+  let j = chars.length -1; 
 
+  for(let i = 0; i <= j; i++){
+    if(chars[i].charCodeAt(0) != chars[j].charCodeAt(0)){
+      let c1 = chars[j].charCodeAt(0); 
+      let c2 = chars[i].charCodeAt(0); 
+      counter += c1 - c2;   
+    }
+    j--;
+  }
+  return counter; 
 }
  
 
-console.log(cesarCypher('middle-Outz', 2, 11)); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log('cesar cypher: ', cesarCypher('middle-Outz', 2, 11)); 
 
 
 function cesarCypher(s, k, l){
-  let num = 0, ch, result = ''; 
+   let str = '', N;
+   k = k % 26;  
 
-  for(let i = 0; i < l; i++){
-    num = 0; 
-    //let ch = s.charAt(i); 
-    let code = s.charCodeAt(i); 
-
-    if(code >= 65 && code <= 90){
-      num = code + k; 
-      if(num > 90){
-        num = 64 + num - 90; 
+   for(let i = 0; i < s.length; i++){
+    if(s[i].charCodeAt(0) >= 97 && s[i].charCodeAt(0) <= 122){
+      N = s[i].charCodeAt(0) + k; 
+      if(N > 122){
+        N = 96 + N - 122; 
       }
-      result += String.fromCharCode(num); 
-    }
-
-    if(code >= 97 && code <= 122){
-      num = code + k; 
-      if(num > 122){
-        num = 96 + num - 122;
+      str += String.fromCharCode(N);
+    } else if (s[i].charCodeAt(0) >= 65 && s[i].charCodeAt(0) <= 90){
+      N = s[i].charCodeAt(0) + k; 
+      if(N > 90){
+        N = 64 + N - 90; 
       }
-      result += String.fromCharCode(num);
-    }
-    if(s.charAt(i) === '-'){
-      result += '-'; 
-    }
+      str += String.fromCharCode(N);
+    } else {
+      str += s[i]; 
+   }
   }
-  return result;  
+  return str; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 gameOfThrones('cdcdcdcdeeeef'); 
 
@@ -386,7 +429,7 @@ function checkbits(n){
   return counter; 
 }
 
-console.log(maxLength(10, 'beabeefeab')); 
+//console.log(maxLength(10, 'beabeefeab')); 
 
 
 function maxLength(n, s){
@@ -395,7 +438,8 @@ function maxLength(n, s){
 
   for(let i = 0; i < n; i++){
     let letter = s.charAt(i); 
-    let letterNumber = String.charCodeAt(letter) - 97; 
+    let letterNumber = letter.charCodeAt(0) - 97; 
+    letterNumber = String.fromCharCode(letter); 
 
     for(let col = 0; col < 26; col++){
       if(pair[letterNumber][col] == letter){
@@ -411,8 +455,107 @@ function maxLength(n, s){
 
 }
 
+console.log(anagram('xaxbbbxx')); 
+//s1 = xaxb
+//s2 = bbxx
+
+function anagram(s){
+  let s1 = s.slice(0, s.length / 2), 
+      s2 = s.slice(s.length / 2), 
+      counter = 0; 
+
+  if(s1.length != s2.length) return -1; 
+
+  s1 = s1.split(''); 
+  s2 = s2.split(''); 
+  for(let i = 0; i < s2.length; i++){
+    let c = s2[i]; 
+    let position = s1.indexOf(c);
+    if(position != -1){
+      s1.splice(position, 1);
+      
+
+    } else {
+      counter++; 
+    }
+  }
+  return counter; 
+}
+
+console.log('find longest string: ', findUSlength('aba', 'cbc')); 
 
 
+function findUSlength(a, b){
+  a.length == b.length ? console.log(-1) : console.log(Math.max(a.length, b.length)); 
+}
+
+console.log('findcharcodeat: ', findAddedChar('abcd', 'abcde')); 
+
+function findAddedChar(s, t){
+  var charCode = 0;  
+
+  for(let i = 0; i < t.length; i++){
+      let char = t[i];
+      let code = t.charCodeAt(i); 
+      charCode += code;
+    }
+  for(let i = 0; i < s.length; i++){
+    let char = s[i];
+    let code = s.charCodeAt(i); 
+    charCode -= code;
+  }
+
+return String.fromCharCode(charCode); 
+}
+
+console.log('number of moves: ', judgeCircle('RLUURDDDLUL')); 
+
+
+function judgeCircle(moves){
+  let numberofmoves = {}; 
+
+  for(let i = 0; i < moves.length; i++){
+    if(!numberofmoves[moves[i]]){
+      numberofmoves[moves[i]] = 1; 
+    } else {
+      numberofmoves[moves[i]] += 1; 
+    }
+  }
+
+  if(numberofmoves['R'] == numberofmoves['L'] && numberofmoves['U'] == numberofmoves['D']){
+    return true; 
+  } else {
+    return false; 
+  }
+}
+
+//canConstruct("a", "b") -> false
+//canConstruct("aa", "ab") -> false
+//canConstruct("aa", "aab") -> true
+
+
+console.log('can construct: ', canConstruct('aac', 'aba'));  
+
+function canConstruct(ransomeNote, magazine){
+  let test = [], code = 0; 
+
+  for(let i in magazine){
+    code = magazine.charCodeAt(i); 
+    code = code - 97; 
+    if(test[code] > 0){
+      test[code] += 1;
+    }  else {
+      test[code] = 1; 
+    }
+  }
+  for(let i in ransomeNote){
+    let notnumber = test[ransomeNote.charCodeAt(i) - 97]; 
+    if(--test[ransomeNote.charCodeAt(i) - 97] < 0 || notnumber == undefined){
+      return false; 
+    }
+  }
+  return true; 
+}
 
 
 
